@@ -115,3 +115,12 @@ retouchées.
   brûler les murs.
 - Le LUT peut être régénéré ou appliqué à une photo avec
   `python3 outils/generer_lut.py photo.jpg photo_retouchee.jpg`.
+- Pour appliquer **tout** le preset (couleurs + texture, clarté, netteté) à une
+  photo : `python3 outils/appliquer_preset.py photo.jpg sortie.jpg --exposition -0.4 --temperature -25`
+  (`--exposition`, `--temperature` et `--teinte` = corrections propres à la photo).
+
+## Photos retouchées
+
+| Photo | Corrections propres à la photo | Résultat |
+|---|---|---|
+| IMG_2553 | Exposition -0,40 (soit 0 au total), température -25 (plus froide, nappe blanche) | `retouches/IMG_2553_Lumineux_Punchy.jpg` |
